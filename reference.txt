@@ -1,0 +1,2 @@
+
+flask-sqlacodegen --flask --outfile User.py --tables user mysql+pymysql://admin:12345678@database-1.cglyd7m1y99e.us-east-2.rds.amazonaws.com:3306/project
