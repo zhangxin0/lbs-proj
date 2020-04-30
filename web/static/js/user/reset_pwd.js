@@ -34,6 +34,10 @@ var mod_pwd_ops = {
 
             if (old_password == new_password){
                 common_ops.alert("Same New Password and Old Password!")
+                $("input[name=new_password]").val('');
+                $("input[name=new_password]").append('<style>.new_password::placeholder{color:red; opacity:0.4;}</style>');
+                $("input[name=new_password2]").val('');
+                $("input[name=new_password2]").append('<style>.confirmation::placeholder{color:red; opacity:0.4;}</style>');
                 return false;
             }
 

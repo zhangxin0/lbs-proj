@@ -13,6 +13,7 @@ var user_register_submit_ops=  {
             }
             var user_name = $(".login_wrap input[name=user_name]").val();
             var password = $(".login_wrap input[name=password]").val();
+            var password2 = $(".login_wrap input[name=password2]").val();
             var phone_number = $(".login_wrap input[name=phone_number]").val();
             var email = $(".login_wrap input[name=email]").val();
             var first_name = $(".login_wrap input[name=first_name]").val();
@@ -20,6 +21,13 @@ var user_register_submit_ops=  {
             var last_name = $(".login_wrap input[name=last_name]").val();
             var occupation = $(".login_wrap input[name=occupation]").val();
             var mail_address = $(".login_wrap input[name=mail_address]").val();
+
+            if (password!=password2){
+                common_ops.alert( "Confirmation not match!" );
+                $("input[name=password2]").val('');
+                $("input[name=password2]").append('<style>.confirmation::placeholder{color:red; opacity:0.4;}</style>');
+                return false
+            }
 
             if(user_name == undefined || user_name.length<1){
                 common_ops.alert("Username is empty!");
@@ -62,6 +70,7 @@ var user_register_submit_ops=  {
                      if(res.code == -1){
                         alert("Username already exists, please input a new username!");
                         $(".login_wrap input[name=user_name]").val('');
+                        $(".login_wrap input[name=user_name]").append('<style>.user_name::placeholder{color:red; opacity:0.4;}</style>');
                      }
                      // no matter login right or wrong response with the alert
                 }
