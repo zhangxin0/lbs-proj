@@ -28,7 +28,10 @@ def login():
         resp['code'] = -1
         resp['msg'] = 'Incorrect username or password！'
         return jsonify(resp)
+    # make_response 制作请求头 make_response可以返回内容，json序列化的和返回界面render_template('')
     response = make_response(json.dumps(resp))
+    # cookie名字和参数
+    response.set_cookie(app.config['AUTH_COOKIE_NAME'],"%s#%s"%(UserService.geneAuthCode(user_info),user_info.id))
     return response
 
 @route_user.route("/register", methods=["GET"])
