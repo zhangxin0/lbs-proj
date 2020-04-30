@@ -1,48 +1,4 @@
 {% include "/index/partials/header.html" %}
-
-<style>
-        #nav{/*置父容器高度，宽度，背景颜色，容器水平居中*/
-            background: None;
-            height: 40px;
-            margin-left:70%;
-        }
-        #nav ul{/*去掉点点*/
-            list-style: none;
-        }
-        #nav  ul li{/*每一个li左浮动形成横排，高度占满父容器形成文字垂直居中，文字水平居中*/
-            float: left;
-            line-height: 40px;
-            text-align: center;
-            position: relative;/*给子ul定位用的*/
-        }
-        #nav  ul li a{/*去下下划线,变成块状继承父容器高度，左右撑开*/
-            text-decoration: none;
-            padding:0 10px;
-            display: block;
-            color: black;
-        }
-        #nav  ul li a:hover{
-            color: white;
-        }
-        #nav  ul li ul {
-            position: absolute;/*相对于父li的位置进行定位*/
-            left: 0;
-            top:40px;
-            display: none;/*隐藏下拉菜单*/
-        }
-        #nav  ul li ul li{
-            float: none;
-        }
-        #nav  ul li:hover ul{
-            display: block;
-            background-color:#b1b5b2;
-            width:160px;
-        }
-        .logout a:hover li{
-            color: white;
-        }
-</style>
-</head>
 <body>
     <div id="nav">
         <ul>
