@@ -61,7 +61,7 @@ var user_register_submit_ops=  {
                      }
                      if(res.code == -1){
                         alert("Username already exists, please input a new username!");
-                        $(".login_wrap input[name=user_name]").html() = '';
+                        $(".login_wrap input[name=user_name]").val('');
                      }
                      // no matter login right or wrong response with the alert
                 }

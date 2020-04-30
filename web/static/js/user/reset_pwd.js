@@ -4,29 +4,36 @@ var mod_pwd_ops = {
         this.eventBind();
     },
     eventBind:function(){
-        $("#save").click(function(){
+        $(".do-modify").click(function(){
             var btn_target = $(this);
             if( btn_target.hasClass("disabled") ){
-                common_ops.alert("正在处理!!请不要重复提交~~");
+                common_ops.alert("Processing..");
                 return;
             }
 
-            var old_password = $("#old_password").val();
-            var new_password = $("#new_password").val();
+            var old_password = $("input[name=old_password]").val();
+            var new_password = $("input[name=new_password]").val();
+            var new_password2 = $("input[name=new_password2]").val();
 
+            if (new_password!=new_password2){
+                common_ops.alert( "Confirmation not match!" );
+                $("input[name=new_password2]").val('');
+                $("input[name=new_password2]").append('<style>.confirmation::placeholder{color:red; opacity:0.4;}</style>');
+                return false
+            }
 
             if( !old_password ){
-                common_ops.alert( "请输入原密码~~" );
+                common_ops.alert( "Please Input Old Password!" );
                 return false;
             }
 
-            if( !new_password || new_password.length < 6 ){
-                common_ops.alert( "请输入不少于6位的新密码~~" );
+            if( !new_password || new_password.length < 1 ){
+                common_ops.alert( "Please Input New Password!" );
                 return false;
             }
 
             if (old_password == new_password){
-                common_ops.alert("新密码与旧密码相同，请重新输入~")
+                common_ops.alert("Same New Password and Old Password!")
                 return false;
             }
 
@@ -48,7 +55,7 @@ var mod_pwd_ops = {
                     var callback = null;
                     if( res.code == 200 ){
                         callback = function(){
-                            window.location.href = window.location.href;
+                            window.location.href = common_ops.buildUrl("/");
                         }
                     }
                     common_ops.alert( res.msg,callback );

@@ -56,7 +56,7 @@ def iPagination( params ):
     ret['range'] = range( ret['from'],ret['end'] + 1 )
     return ret
 '''
-统一渲染方法
+统一渲染方法 传递用户信息变量
 '''
 def ops_render(  template, context = {} ):
     if 'current_user' in g:

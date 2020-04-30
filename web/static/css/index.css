@@ -4,7 +4,6 @@ li{
 h1{
     color: white;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
     font-weight: normal;
     height: 135px;
     letter-spacing: 1px;
@@ -23,224 +22,33 @@ h1{
     margin:0;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
-#author{
-    /*font-family: 'Caveat', cursive;*/
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 38.6%;
-    padding-left: 60%;
-    line-height: 0.6;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
+
 #main {
     margin:auto auto;
     background-color:white;
     width:100%;
 }
-.input-group-append{
-    width: auto;
-    text-align: left;
-}
+
 #body {
     background:white;
 }
-#price_holder{
-    margin-left:0;
-    text-align:left;
-}
-#current_price{
-    display:inline-block;
-    color:rgba(255,44,44,0.75);
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 3px;
-}
 
-#goal_price{
-    display:inline-block;
-    color:rgba(255,44,44,0.75);
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 3px;
-}
-
-.form-control{
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 2px;
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-#list_container{
-    margin-left:0%;
-    width:100%;
-    text-align:center;
-}
-
-.col {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-.left, .right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-#button-addon2{
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 2px; 
-}
-
-.completed{
-    color:gray;
-    text-decoration: line-through;
-}
-#p1{
-    background: #2980b9;
-    color:white;
-    margin:0;
-    padding:6px 20px;
-    text-transform: uppercase;
-    font-size:24px;
-    font-weight: normal;
-    height: 40px;
-    text-align: center;
-}
 li{
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 2px; 
-    background: #757F9A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    letter-spacing: 2px;
     line-height: 40px;
     height:40px;
-    color:#666;
-    text-align: left;
+    color:black;
+    text-align: center;
 }
-li:nth-child(2n){
-    background:#f7f7f7;
-}
-#ip2{
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 2px; 
-    font-size: 18px;
-    color:#2980b9;
-    background-color:#f7f7f7;
-    width:100%;
-    padding-top: 13px 13px 13px 20px;
-    box-sizing:border-box;  
-    height: 40px;
-    color:gray;
-    padding-left:20px;
-    /*box include the padding*/
-}
-#ip2:focus{
-    background:#fff;
-    border:3px solid #2980b9;
-    outline:none;
-}
-.fa-plus{
-    float: left;
-    color: white;
-}
+
+
 ul{
     list-style:none;
     margin:0;
     padding:0;
 }
-#plus{
-    background:#e74c3c;
-    margin-right: 20px;
-    text-align: center;
-    color:white;
-    width: 0px;
-    display: inline-block;
-    height:100%;
-    margin-top: 0px;
-    padding-top: 12px;
-    transition:0.2s linear;
-    opacity: 0;
-}
-li:hover #plus {
-    width:40px;
-    opacity: 1;
-}
-#trash{
-    background:#e74c3c;
-    margin-right: 20px;
-    text-align: center;
-    color:white;
-    width: 0px;
-    display: inline-block;
-    height:100%;
-    margin-top: 0px;
-    padding-top: 12px;
-    transition:0.2s linear;
-    opacity: 0;
-}
-li:hover #trash {
-    width:40px;
-    opacity: 1;
-}
-.selector{
-    /*background: #2980b9;*/
-    background:rgba(255,44,44,0.75);
-    color:white;
-    margin:0;
-    padding:6px 20px;
-    text-transform: uppercase;
-    font-size:24px;
-    font-weight: normal;
-    height: 40px;
-    text-align: center;
-}
-
-#stock_list{
-    text-align:center;
-    width:100%;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
-#selectorList{
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
 
 
-#select_result{
-    text-align: center;
-    color:rgba(255,44,44,0.75);
-}
 
-#strategy_paragraph{
-    text-align:left;
-    margin-top:10px;
-    margin-left:5px;
-    color:rgba(255,44,44,0.75);
-    opacity:0.8;
-}
 
-#history_container{
-    margin-top:64px;
-    width:100%;
-}
-#history_table{
-    text-align: center;
-}
+

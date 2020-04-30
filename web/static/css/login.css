@@ -1,0 +1,15 @@
+body{
+    background-image:url('https://pic.downk.cc/item/5e6d5fe3e83c3a1e3aa2aaf6.jpg');
+    background-size:100%;
+}
+.project_name{
+    color:white;
+    opacity:0.8;
+}
+.login_wrap{
+    margin-top:16%;
+}
+input{
+    opacity:0.6;
+    border-color:blue;
+}

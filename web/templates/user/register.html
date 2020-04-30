@@ -1,5 +1,6 @@
 {% extends "common/layout_user.html" %}
 {% block content %}
+<link href="{{ buildStaticUrl('/css/register.css') }}" rel="stylesheet">
 <div class="loginColumns animated fadeInDown" id="login_wrapper">
 	<div class="row">
 			<div class="ibox-content">
@@ -34,7 +35,12 @@
 					<div class="form-group" style="margin-left:25%;">
 						<span>mail address:</span><input type="text" name="mail_address" class="form-control" placeholder="Please Input Username" style="width:75%;">
 					</div>
-					<button type="button" class="btn btn-primary block full-width m-b do-submit" style="margin-left:75%;">Submit</button>
+					<div class="button-back" style="display:inline-block;margin-left:73%;">
+						<a href="/user/login"><button type="button" class="btn btn-primary block full-width m-b do-back">Back</button></a>
+					</div>
+					<div class="button-submit" style="display:inline-block;">
+						<button type="button" class="btn btn-primary block full-width m-b do-submit">Submit</button>
+					</div>
                 </div>
 			</div>
 	</div>
